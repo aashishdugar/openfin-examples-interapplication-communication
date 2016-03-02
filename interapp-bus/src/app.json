@@ -1,0 +1,20 @@
+{
+  "devtools_port": 9090,
+  "startup_app": {
+    "name": "OpenFin windowclosing",
+    "description": "windowclosing",
+    "url": "http://localhost:9097",
+    "uuid": "interapp-events-test",
+    "autoShow": true
+  },
+  "runtime": {
+    "arguments": "",
+    "__version": "4.40.2.0",
+    "version": "5.44.9.2"
+  },
+  "shortcut": {
+    "company": "OpenFin",
+    "description": "test interapp bus and window sizing",
+    "name": "BNPP_interApp"
+  }
+}
