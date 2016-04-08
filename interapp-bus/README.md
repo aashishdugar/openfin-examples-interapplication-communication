@@ -20,7 +20,7 @@ This should start a simple Node server at [http://localhost:9097](http://localho
 
 If you wish to change to localhost port you will need to change the references in "server.js", "app.json" and in the installer link below.
 
-[installer](https://dl.openfin.co/services/download?fileName=bnpp_interapp&config=http://localhost:9097/app.json)
+[installer](https://dl.openfin.co/services/download?fileName=interapp-simple&config=http://localhost:9097/app.json)
 
 Things to note. 
 
