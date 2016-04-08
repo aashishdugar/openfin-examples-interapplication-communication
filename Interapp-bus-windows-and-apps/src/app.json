@@ -1,0 +1,23 @@
+{
+  "devtools_port": 9090,
+  "startup_app": {
+    "name": "OpenFin windowclosing",
+    "description": "interapp bus api example",
+    "url": "http://localhost:9098",
+    "uuid": "interapp-api-example",
+    "autoShow": true,
+    "defaultHeight":"900",
+    "defaultLeft": "20",
+    "defaultTop":"20",
+    "defaultWidth":"900"
+  },
+  "runtime": {
+    "arguments": "",
+    "version": "stable"
+  },
+  "shortcut": {
+    "company": "OpenFin",
+    "description": "interapp bus api example",
+    "name": "interapp-api-example"
+  }
+}

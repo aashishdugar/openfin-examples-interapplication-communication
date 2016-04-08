@@ -1,0 +1,40 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+}
+
+.highlight{
+    color: #ff9e24;
+}
+
+.output-results{
+    min-height: 60px;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    color: #454545;
+    margin: 3px 0;
+    padding: 3px;
+    /*-webkit-box-shadow: inset 1px 1px 5px 1px rgba(0,0,0,0.21);*/
+    /*-moz-box-shadow: inset 1px 1px 5px 1px rgba(0,0,0,0.21);*/
+    /*box-shadow: inset 1px 1px 5px 1px rgba(0,0,0,0.21);*/
+}
+
+#parent-avatar{
+    background-color: #ffffff;
+    -webkit-transition: all 0.5s;
+    -moz-transition:    all 0.5s;
+    -ms-transition:     all 0.5s;
+    -o-transition:      all 0.5s;
+    transition:         all 0.5s;
+
+    -webkit-box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.41);
+    -moz-box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.41);
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.41);
+
+    margin: 8px 0;
+    padding: 8px;
+}
+
+#inter-app-errors{
+    color: #ff0000;
+}
