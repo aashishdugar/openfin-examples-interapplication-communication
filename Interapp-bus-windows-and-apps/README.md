@@ -59,10 +59,17 @@ A child window may subscribe to a topic which has been specifically targeted at 
 subscribe(App123, App123, 'i-called-your-name', listener, callbackopt, errorCallbackopt) 
 ```
 
-The sender with the UUID of 'App123' would then send adding the optional name of the child window to be targeted.
+The sender with the UUID of 'App123' would then send adding the optional name of the child window to be targeted. 
+
+The subscriber may also set the UUID to a wildcard by specifying '*' as the UUID allowing it to subscribe to sends from any app.
+
+```
+subscribe("*", "*", 'i-called-your-name', listener, callbackopt, errorCallbackopt) 
+```
 
 ##Running the example
-To run this example, in a command line terminal, navigate to the root directory (Interapp-bus-windows-and-apps)
+To run this example, in a command line terminal, navigate to the root directory (Interapp-bus-windows-and-apps) as shown below:
+
 
 ```
 $ npm install
