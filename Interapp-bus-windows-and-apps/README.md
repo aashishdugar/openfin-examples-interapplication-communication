@@ -3,7 +3,7 @@ The InterApplicationBus allows for publish/subscribe interactivity between appli
 
 There are two types of OpenFin windows - applications and child windows. 
 
-##Windows
+## Windows
 Child windows 'belong' to the parent application which spawned them and will be closed when the parent application closes. Providing they share the same domain, parent application may access the child window's DOM elements via getNativeWindow(). For example - to access a DOM Element with the id of 'Content' in a child window you may do the following:
 
 ```
@@ -13,43 +13,43 @@ content.innerHTML = "<h1>Changed without the InterApplicationBus!</h1>"
 ```
 This does not, however, preclude you from using the InterApplicationBus, it just may not be necessary.
 
-##Applications
+## Applications
 An application window, even when spawned by another application, is independent of all other applications. Messaging between OpenFin's applications is handled by a Publish/Subscribe (pub-sub) system where Events are dispatched with a 'topic', a string identifying the type of event, and a 'message', which may be a JavaScript primitive, Object or Array.
 
-##Publish options
+## Publish options
 There are a number of ways to communicate between windows:
 
-####Publishing 
+#### Publishing 
 ```
 publish(topic, message, callbackopt, errorCallbackopt)
 ```
 
 This publishes to ALL applications running on the OpenFin runtime who have subscribed to the topic.
 
-####Sending
+#### Sending
 ```
 send(destinationUuid, topic, message, callbackopt, errorCallbackopt)
 ```
 
 This sends only to an application with a specific UUID. The receiving application must also subscribe to the topic to receive results.
 
-####Sending with an optional window name
+#### Sending with an optional window name
 ```
 send(destinationUuid, name, topic, message, callbackopt, errorCallbackopt)
 ```
 
 This sends to a specific named child window of the destination application. The receiving child window must also subscribe to the topic to receive results.
 
-##Subscribe options
+## Subscribe options
 
-####Subscribing to a topic
+#### Subscribing to a topic
 ```
 subscribe(senderUuid, topic, listener, callbackopt, errorCallbackopt) 
 ```
 
 An Application, or child window of an Application, may subscribe to a specific topic. The subscription may be a 'wildcard' subscription, by specifying '*' as the senderUuid, meaning it will receive all bus messages sent on the specific topic, regardless of the publisher's UUID. They will not receive messages form senders who target a UUID which is not their own via the 'send' method.
 
-####Subscribing to a topic as a named window
+#### Subscribing to a topic as a named window
 ```
 subscribe(senderUuid, name, topic, listener, callbackopt, errorCallbackopt) 
 ```
@@ -67,7 +67,7 @@ The subscriber may also set the UUID to a wildcard by specifying '*' as the UUID
 subscribe("*", "*", 'i-called-your-name', listener, callbackopt, errorCallbackopt) 
 ```
 
-##Running the example
+## Running the example
 To run this example, in a command line terminal, navigate to the root directory (Interapp-bus-windows-and-apps) as shown below:
 
 
