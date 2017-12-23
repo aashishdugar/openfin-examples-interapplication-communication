@@ -74,19 +74,14 @@ To run this example, in a command line terminal, navigate to the root directory 
 ```
 $ npm install
 ```
-NB: on a Mac you may need to type 'sudo npm install'
 
 Navigate to the root folder where 'server.js' resides with your command line tool and run:
 
 ```
-$ node server
+$ npm start server
 ```
 
-This should start a simple Node server at [http://localhost:9098](http://localhost:9098), then, click the link below to install as an openFin app.
-
-If you wish to change to localhost port you will need to change the references in "server.js", "app.json" and in the installer link below.
-
-[installer](https://dl.openfin.co/services/download?fileName=inter-app-api&config=http://localhost:9098/app.json)
+This should start a simple Node server at [http://localhost:9098](http://localhost:9098) and launch the demo using [our node-openfin-launcher](https://www.npmjs.com/package/openfin-launcher).
 
 
 
