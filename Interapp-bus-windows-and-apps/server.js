@@ -18,7 +18,11 @@ var port = process.env.PORT || 9098;
 
 const configPath = path.join(__dirname, 'src', 'app.json');
 
-http.createServer(app).listen(port, function(){
+let localServer = http.createServer(app).listen(port, function(){
     console.log('Express server listening on port ' + port);
-    openfinLauncher.launchOpenFin({ configPath });
+    openfinLauncher.launchOpenFin({ configPath }).then(() => {
+        localServer.close();
+    }).fail(e => {
+        console.log(`Launch Error! ${e}`);
+    });
 });
